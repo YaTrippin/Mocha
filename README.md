@@ -1,4 +1,4 @@
-# **M**edi**OC**re **H**ome **A**utomation.
+# **Simple Automation**.
 Python server designed to run on Raspberry Pi to control future projects.
 
 | Module Name | Function | Current Version |
