@@ -1,0 +1,26 @@
+groups:
+  - name: Office Desk
+    force_sync: True
+
+lights:
+  - name: Office Desk Front Backlight
+    type: RGBW
+    network_id: 0
+    hw_id: 0
+    args:
+      - white_temperature: Cool
+    groups:
+      - Office Desk
+  - name: Office Desk Side Backlight
+    type: RGBW
+    network_id: 0
+    hw_id: 1
+    args:
+      - white_temperature: Cool
+    groups: 
+      - Office Desk
+
+nodes:
+  - network_id: 0
+    max_lights: 2
+
