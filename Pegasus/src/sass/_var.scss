@@ -1,0 +1,40 @@
+/*
+MAIN COLOURS
+*/
+$darker: #011012;
+$dark: #02191C;
+$base: #19715B;
+$accent: #9DCC6B;
+
+/*
+TEXT SHADES
+*/
+$text-shade-1: #D2D2D2;
+$text-shade-2: #A7A7A7;
+$text-shade-3: #202020;
+$text-shade-4: #0f0f0f;
+
+/* 
+SHADOWS
+*/
+$shadow: rgba(#000000, .5)  1rem 1rem 2.5rem .4rem;
+
+
+/*
+BACKGROUND
+*/
+
+$bg-dark-gradient: linear-gradient(to bottom, #02191c, #02181b, #02181a, #021719, #021618, #021517, #021517, #021416, #021315, #021214, #011113, #011012);
+
+/*
+LAYOUT
+*/
+$top-bar-sizing: 8rem;
+$gap: 6rem;
+
+// Padding
+$card-padding: 1em 3em;
+$main-content-padding: 25%;
+
+// Border
+$card-radius: 2rem;

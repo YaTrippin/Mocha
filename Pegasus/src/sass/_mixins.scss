@@ -1,0 +1,19 @@
+@mixin glow($colour: $accent, $blur: 5rem, $spread: .5rem) {
+    -webkit-box-shadow: 0px 0px $blur $spread $colour;
+    -moz-box-shadow: 0px 0px $blur $spread $colour;
+    box-shadow: 0px 0px $blur $spread $colour;
+}
+
+@mixin scrollbegone() {
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@mixin shadow($colour: #000000, $opacity: 0.4, $x: 0, $y: 0, $blur: 5px, $spread: 5px) {
+    box-shadow: rgba($colour, $opacity) $x $y $blur $spread;
+}

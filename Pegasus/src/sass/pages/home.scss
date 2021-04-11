@@ -1,0 +1,75 @@
+@import "../app.scss";
+
+html {
+    @include scrollbegone(); 
+}
+
+.main-page-wrapper {    
+    background: $dark;
+    @include flexbox($direction: column, $align-perp: stretch);
+
+    .top-content-wrapper {
+        position: relative;
+        background: $darker;
+
+        @include shadow(#000000, 0.4, .5rem, 1rem, 1.5rem, 0.7rem);
+        @include flexitem(0, 0, $top-bar-sizing);
+        @include flexbox(row, nowrap, flex-start, stretch, flex-start);
+        
+        .accent-line {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(to right, $accent, $base);
+        }
+
+        .main-content {
+            @include flexitem(1, 1, 50%);
+            @include flexbox(row, nowrap, flex-start, center, flex-start);
+
+            .logo {
+                display: block;                            
+                max-width: 2ch;                
+                @include flexitem(0, 0, 10ch);
+            }
+
+            .nav-group {
+                @include flexitem(1, 1, auto);
+                @include flexbox(row, nowrap, center, center, flex-start);
+
+                .item {
+                    display: inline-block;
+                    &:not(:last-child) {
+                        margin-right: 5ch;
+                    }
+                }
+            }
+
+            .status {
+                @include flexitem(0, 0, 10ch);
+                text-align: right;
+            }
+        }
+
+        .pad-left,
+        .pad-right {
+            @include flexitem(0, 2, $main-content-padding);
+        }
+    }
+    .main-content-wrapper {
+        @include flexitem(1, 1, 50%);
+        @include flexbox($wrap: nowrap, $align-main: center);
+        .main-content-left,
+        .main-content-right {
+            @include flexitem(0, 2, $main-content-padding);
+        }
+        .main-content-center {
+            width: 100%;
+            margin-top: $gap * 5;            
+            @include infinite-grid($row-size: 23rem, $columns: repeat(3, 34rem), $grid-gap: $gap)
+        }
+        
+    }
+}
