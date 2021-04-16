@@ -1,0 +1,17 @@
+version: "0.1"
+services:
+    andromeda:
+        build: ./Andromeda
+        ports: "8080:8080"
+        volumes:
+            - moduleconfig:/var/conf
+    pegasus:
+        build: ./Pegasus
+        ports: "80:8080"
+        volumes:
+            - webconfig:/var/conf
+    vega:
+        build: ./Vega
+        ports: "8081:8080"
+        volumes:
+            -
