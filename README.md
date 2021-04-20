@@ -1,5 +1,5 @@
-# **Simple Automation**.
-Python server designed to run on Raspberry Pi to control future projects.
+# **Automation**.
+
 
 | Module Name | Function | Current Version |
 |-------------|----------|-----------------|
