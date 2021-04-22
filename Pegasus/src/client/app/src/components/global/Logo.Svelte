@@ -1,4 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="50.5" height="36.699" viewBox="0 0 50.5 36.699">
+<script>
+  export let styleProp = "";
+</script>
+<svg xmlns="http://www.w3.org/2000/svg" width="50.5" height="36.699" viewBox="0 0 50.5 36.699" style={styleProp}>
   <defs>
     <style>
       .cls-1 {
